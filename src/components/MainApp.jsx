@@ -1,28 +1,34 @@
 import React from 'react';
-import IconComponent from './IconComponent';
-
-let masterIconList = [
-  {
-    image: 'image source goes here',
-    description: 'Hamburger Menu'
-  },
-  {
-    image: 'image source goes here',
-    description: 'Arrow'
-  }
-];
+import HamburgerIconComponent from './HamburgerIconComponent';
+import ArrowDownIcon from './ArrowDownIconComponent';
+import ArrowUpIconComponent from './ArrowupIconComponent';
+import { Link } from 'react-router-dom';
 
 
 function MainApp(){
+const main = {
+  display:'flex'
+}
+
+const iconBox = {
+  width: '33%'
+}
+
+const icon = {
+  width: '100%',
+}
+
   return (
-    <div>
-      <p>Nothing in the main app component right now</p>
-      {masterIconList.map((icon, index) =>
-        <IconComponent image={icon.image}
-          description={icon.description}
-          key={index}
-        />
-      )}
+    <div style={main}>
+      <div style={iconBox}>
+        <HamburgerIconComponent style={icon}></HamburgerIconComponent>
+      </div>
+      <div style={iconBox}>
+        <ArrowDownIcon></ArrowDownIcon>
+      </div>
+      <div style={iconBox}>
+        <ArrowUpIconComponent></ArrowUpIconComponent>
+      </div>
     </div>
   );
 }
