@@ -6,17 +6,17 @@ import { Link } from 'react-router-dom';
 
 
 function MainApp(){
-const main = {
-  display:'flex'
-}
+  const main = {
+    display:'flex'
+  };
 
-const iconBox = {
-  width: '33%'
-}
+  const iconBox = {
+    width: '33%'
+  };
 
-const icon = {
-  width: '100%',
-}
+  const icon = {
+    width: '100%',
+  };
 
   return (
     <div style={main}>

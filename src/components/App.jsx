@@ -10,6 +10,7 @@ function App(){
     boxSizing: 'border-box',
     margin: '0',
     padding: '0',
+    backgroundImage: 'linear-gradient(-180deg, #E3DDD0 8%, #DDCCC5 22%, #B96982 73%, #163742 100%)'
   };
 
   return (
