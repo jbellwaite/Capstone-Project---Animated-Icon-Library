@@ -9,13 +9,13 @@ function GetCodeButton(){
     borderRadius: '15px',
     justifyContent: 'center',
     alignItems: 'center',
-  }
+  };
   const arrowDownIcon={
     width: '10%',
-  }
+  };
   const getCode={
     width: '70%',
-  }
+  };
 
   return (
     <div style = {buttonStyle}>
