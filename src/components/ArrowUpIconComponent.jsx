@@ -1,6 +1,5 @@
 import React from 'react';
 import arrowUp from '../assets/images/arrowup.png';
-import CodeSnippetComponent from './CodeSnippetComponent';
 
 function ArrowUpIconComponent(){
 

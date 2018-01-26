@@ -1,36 +1,39 @@
 import React from 'react';
 import HamburgerIconComponent from './HamburgerIconComponent';
-import ArrowDownIcon from './ArrowDownIconComponent';
-import ArrowUpIconComponent from './ArrowupIconComponent';
-import { Link } from 'react-router-dom';
+import GetCodeButton from './GetCodeButton';
+// import { Link } from 'react-router-dom';
+import ReactHover from 'react-hover';
 
+const main = {
+  display:'flex'
+};
 
-function MainApp(){
-  const main = {
-    display:'flex'
-  };
+const iconBox = {
+  width: '33%'
+};
 
-  const iconBox = {
-    width: '33%'
-  };
+const icon = {
+  width: '100%',
+};
 
-  const icon = {
-    width: '100%',
-  };
+class MainApp extends React.Component{
 
-  return (
-    <div style={main}>
-      <div style={iconBox}>
-        <HamburgerIconComponent style={icon}></HamburgerIconComponent>
+  render(){
+    return (
+      <div style={main}>
+        <div style={iconBox}>
+          <ReactHover>
+            <ReactHover.Trigger type='trigger'>
+              <HamburgerIconComponent style={icon} />
+            </ReactHover.Trigger>
+            <ReactHover.Hover type='hover'>
+              <GetCodeButton />
+            </ReactHover.Hover>
+          </ReactHover>
+        </div>
       </div>
-      <div style={iconBox}>
-        <ArrowDownIcon></ArrowDownIcon>
-      </div>
-      <div style={iconBox}>
-        <ArrowUpIconComponent></ArrowUpIconComponent>
-      </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default MainApp;

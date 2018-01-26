@@ -1,6 +1,5 @@
 import React from 'react';
 import arrowDownIcon from '../assets/images/arrowdown.png';
-import CodeSnippetComponent from './CodeSnippetComponent';
 
 function ArrowDownIcon(){
 
