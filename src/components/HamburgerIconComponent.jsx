@@ -9,7 +9,6 @@ function HamburgerIconComponent(){
     <div>
       <img src={hamburgerMenu}/>
       <GetCodeButton></GetCodeButton>
-      <CodeSnippetComponent></CodeSnippetComponent>
     </div>
   );
 }

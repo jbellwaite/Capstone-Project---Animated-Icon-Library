@@ -7,7 +7,6 @@ function ArrowDownIcon(){
   return (
     <div>
       <img src={arrowDownIcon}/>
-      <CodeSnippetComponent></CodeSnippetComponent>
     </div>
   );
 }

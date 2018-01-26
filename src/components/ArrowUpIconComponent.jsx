@@ -7,7 +7,6 @@ function ArrowUpIconComponent(){
   return (
     <div>
       <img src={arrowUp}/>
-      <CodeSnippetComponent></CodeSnippetComponent>
     </div>
   );
 }
