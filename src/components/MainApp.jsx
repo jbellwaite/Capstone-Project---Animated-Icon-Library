@@ -32,6 +32,7 @@ var masterIconList = [
     image:<img src={arrowDownIcon}/>,
   },
 ];
+
 class MainApp extends React.Component{
 
   constructor(props) {
@@ -50,7 +51,7 @@ class MainApp extends React.Component{
   render(){
     let currentlyVisibleContent = null;
     if (this.state.clickButtonVisibleOnPage === true){
-      currentlyVisibleContent = <div><GetCodeButton></GetCodeButton></div>;
+      currentlyVisibleContent = <GetCodeButton></GetCodeButton>;
       console.log('Get Code Button Should Appear');
     } else {
       currentlyVisibleContent = null;
@@ -63,15 +64,20 @@ class MainApp extends React.Component{
             {masterIconList.map((profile, index) =>
               <IconComponent
                 image={profile.image}
-                key={index}/>
+                visibleClick={currentlyVisibleContent}
+                key={index}
+                />
             )}
-            <div>{currentlyVisibleContent}</div>
           </div>
         </div>
       </div>
     );
   }
 }
+
+MainApp.propTypes = {
+  onNewIcon: PropTypes.func
+};
 
 export default MainApp;
 
