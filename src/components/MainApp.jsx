@@ -1,5 +1,6 @@
 import React from 'react';
-// import HamburgerIconComponent from './HamburgerIconComponent';
+import PropTypes from 'prop-types';
+
 import GetCodeButton from './GetCodeButton';
 // import { Link } from 'react-router-dom';
 // import ReactHover from 'react-hover';
@@ -66,7 +67,7 @@ class MainApp extends React.Component{
                 image={profile.image}
                 visibleClick={currentlyVisibleContent}
                 key={index}
-                />
+              />
             )}
           </div>
         </div>

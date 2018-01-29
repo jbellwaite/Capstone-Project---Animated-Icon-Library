@@ -16,22 +16,22 @@ class IconComponent extends React.Component{
     this.setState({clickSnippetVisibleOnPage: makeCodeSnippetVisible});
   }
 
-render(){
-  let currentlyVisibleContent = null;
-  if(this.state.clickSnippetVisibleOnPage === true){
-    currentlyVisibleContent = <CodeSnippetComponent></CodeSnippetComponent>;
+  render(){
+    let currentlyVisibleContent = null;
+    if(this.state.clickSnippetVisibleOnPage === true){
+      currentlyVisibleContent = <CodeSnippetComponent></CodeSnippetComponent>;
       console.log('Code Snippet Should Appear');
-  } else {
-    currentlyVisibleContent = null;
-    console.log('No Code Snippet');
+    } else {
+      currentlyVisibleContent = null;
+      console.log('No Code Snippet');
+    }
+    return (
+      <div>
+        <p>{this.props.image}</p>
+        <div>{this.props.visibleClick}</div>
+      </div>
+    );
   }
-  return (
-    <div>
-      <p>{this.props.image}</p>
-      <div>{this.props.visibleClick}</div>
-    </div>
-  );
-}
 }
 IconComponent.propTypes = {
   image: PropTypes.object,

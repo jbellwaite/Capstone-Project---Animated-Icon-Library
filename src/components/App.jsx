@@ -14,28 +14,29 @@ const bodyStyle ={
 class App extends React.Component {
 
   constructor(props) {
-      super(props);
-      this.state = {
-        masterIconList: []
-      };
-    }this.handleIconList = this.handleIconList.bind(this);
+    super(props);
+    this.state = {
+      masterIconList: []
+    };
+    this.handleIconList = this.handleIconList.bind(this);
+  }
 
-    handleIconList(newIcon){
-       var newIconList = this.state.masterTicketList.slice();
-       newIconList.push(newIcon);
-       this.setState({masterIconList: newIconList});
-     }
+  handleIconList(newIcon){
+    var newIconList = this.state.masterTicketList.slice();
+    newIconList.push(newIcon);
+    this.setState({masterIconList: newIconList});
+  }
 
-render(){
-  return (
-    <div style={bodyStyle}>
-      <HeaderComponent />
-      <Switch>
-        <Route exact path="/" component={HomeComponent} />
-        <Route exact path="/mainapp"
-        render={()=><MainApp onNewIcon={this.handleIconList}/>} />
-      </Switch>
-    </div>
+  render(){
+    return (
+      <div style={bodyStyle}>
+        <HeaderComponent />
+        <Switch>
+          <Route exact path="/" component={HomeComponent} />
+          <Route exact path="/mainapp"
+            render={()=><MainApp onNewIcon={this.handleIconList}/>} />
+        </Switch>
+      </div>
     );
   }
 }
