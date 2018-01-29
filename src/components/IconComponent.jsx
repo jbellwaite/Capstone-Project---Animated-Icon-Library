@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import CodeSnippetComponent from './CodeSnippetComponent';
 import GetCodeButton from './GetCodeButton';
 
 class IconComponent extends React.Component{

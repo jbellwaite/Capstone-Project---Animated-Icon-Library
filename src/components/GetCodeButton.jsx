@@ -1,5 +1,6 @@
 import React from 'react';
 import ArrowDownIcon from '../assets/images/arrowdown.png';
+import CodeSnippetComponent from './CodeSnippetComponent';
 
 const buttonStyle={
   display: 'flex',
@@ -25,31 +26,37 @@ const getCode={
 // };
 
 class GetCodeButton extends React.Component {
-
-  constructor(){
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      clickedButton: false
+      getCodeVisible: false
     };
     this.getCode = this.getCode.bind(this);
   }
 
   getCode(){
-    let newVoteUp = !this.state.clickedButton;
-    this.setState({clickedButton: newVoteUp});
+    let makeCodeVisible = !this.state.getCodeVisible;
+    this.setState({getCodeVisible: makeCodeVisible});
   }
 
   render(){
-    let currentlyVisibleCodeSnippet = null;
-    if (this.state.clickedButton){
-      console.log(this.state);
+    let currentlyVisibleContent = null;
+    if (this.state.getCodeVisible === true){
+      currentlyVisibleContent = <CodeSnippetComponent></CodeSnippetComponent>;
+      console.log('Get Code Button Should Appear');
+    } else {
+      currentlyVisibleContent = false;
+      console.log('No Get Code Button Should Dsiaply');
     }
 
     return (
       <div>
         <div style = {buttonStyle} onClick={this.getCode}>
           <img src={ArrowDownIcon} style={arrowDownIcon}/>
-          <h2 style={getCode}>get code</h2>
+          <h2>get code</h2>
+        </div>
+        <div>
+          {currentlyVisibleContent}
         </div>
 
       </div>
