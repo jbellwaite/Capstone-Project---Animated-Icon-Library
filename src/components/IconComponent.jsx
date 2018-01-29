@@ -1,34 +1,35 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import CodeSnippetComponent from './CodeSnippetComponent';
+import GetCodeButton from './GetCodeButton';
 
 class IconComponent extends React.Component{
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
-      clickSnippetVisibleOnPage: false
+      clickButtonVisibleOnPage: false
     };
-    this.getCodeSnippet = this.getCodeSnippet.bind(this);
+    this.getCode = this.getCode.bind(this);
   }
 
-  getCodeSnippet(){
-    let makeCodeSnippetVisible = !this.state.clickSnippetVisibleOnPage;
-    this.setState({clickSnippetVisibleOnPage: makeCodeSnippetVisible});
+  getCode(){
+    let makeButtonVisible = !this.state.clickButtonVisibleOnPage;
+    this.setState({clickButtonVisibleOnPage: makeButtonVisible});
   }
 
   render(){
     let currentlyVisibleContent = null;
-    if(this.state.clickSnippetVisibleOnPage === true){
-      currentlyVisibleContent = <CodeSnippetComponent></CodeSnippetComponent>;
-      console.log('Code Snippet Should Appear');
+    if (this.state.clickButtonVisibleOnPage === true){
+      currentlyVisibleContent = <GetCodeButton></GetCodeButton>;
+      console.log('Get Code Button Should Appear');
     } else {
-      currentlyVisibleContent = null;
-      console.log('No Code Snippet');
+      currentlyVisibleContent = false;
+      console.log('No Get Code Button Should Dsiaply');
     }
     return (
       <div>
-        <p>{this.props.image}</p>
-        <div>{this.props.visibleClick}</div>
+        <p onClick={this.getCode}>{this.props.image}</p>
+        <div>{currentlyVisibleContent}</div>
       </div>
     );
   }

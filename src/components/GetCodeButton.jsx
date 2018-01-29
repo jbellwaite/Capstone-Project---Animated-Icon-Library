@@ -26,7 +26,6 @@ const getCode={
 
 class GetCodeButton extends React.Component {
 
-
   constructor(){
     super();
     this.state = {
@@ -41,7 +40,7 @@ class GetCodeButton extends React.Component {
   }
 
   render(){
-    // let currentlyVisibleCodeSnippet = null;
+    let currentlyVisibleCodeSnippet = null;
     if (this.state.clickedButton){
       console.log(this.state);
     }
