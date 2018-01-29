@@ -20,10 +20,8 @@ class IconComponent extends React.Component{
     let currentlyVisibleContent = null;
     if (this.state.clickButtonVisibleOnPage === true){
       currentlyVisibleContent = <GetCodeButton></GetCodeButton>;
-      console.log('Get Code Button Should Appear');
     } else {
       currentlyVisibleContent = false;
-      console.log('No Get Code Button Should Dsiaply');
     }
     return (
       <div>

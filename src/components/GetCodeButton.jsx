@@ -43,10 +43,8 @@ class GetCodeButton extends React.Component {
     let currentlyVisibleContent = null;
     if (this.state.getCodeVisible === true){
       currentlyVisibleContent = <CodeSnippetComponent></CodeSnippetComponent>;
-      console.log('Get Code Button Should Appear');
     } else {
       currentlyVisibleContent = false;
-      console.log('No Get Code Button Should Dsiaply');
     }
 
     return (
