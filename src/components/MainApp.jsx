@@ -17,7 +17,7 @@ const icon = {
   width: '100%',
 };
 
-var masterIconList = [
+const masterIconList = [
   {
     image:<img src={hamburgerMenu}/>,
   },

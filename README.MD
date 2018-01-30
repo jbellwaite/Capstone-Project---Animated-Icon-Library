@@ -1,14 +1,44 @@
-![Animated Icon App Component and Route Structure](/src/assets/images/ComponentFlow.png)
 
-# Animated Icon Gallery
+# Animated Icon Gallery "Animicon"
 
-#### An library of animated icons coded using React
+#### A library of animated icons coded using React
 
 #### by **Jessie Waite**
 
 ## Description
 
-This application was created as my capstone project for my time at Epicodus code school. The app is intended to be a resource for developers who want to implement animated icons into their project, but don't want to spend the time coding and creating the icons themselves. The app enables developers to see how the icon animation works and lets them copy and paste code they need right from the page's interface. Its my way of helping coders without a design background implement cool and beautiful things into their projects.
+This application was created as my capstone project for my time at Epicodus code school. The app is intended to be a resource for developers who want to implement animated icons into their project, but don't want to spend the time coding and creating the icons themselves. The app enables developers to see how the icon animation works and lets them copy and paste the code they need right from the page's interface. Its my way of helping coders without a design background implement cool and beautiful things into their projects.
+
+## MockUps:
+#### Desktop Website Intro Page
+
+![Desktop Website Intro Page](src/assets/images/frontpage.png)
+
+#### Desktop Icon Page
+
+![Desktop Website Icon Page](src/assets/images/iconmarkup.png)
+
+#### Desktop - How code will be displayed
+
+![Desktop Website Icon Page](src/assets/images/clickforcode.png)
+
+#### Mobile - Icon Page
+
+![Mobile Website Icon Page](src/assets/images/mobileicon.png)
+
+#### Mobile - Icon Page
+
+![Mobile Website Icon Page](src/assets/images/mobileclickforcode.png)
+
+## User Stories
+
+![User Story 1](src/assets/images/userstory1.png)
+![User Story 1](src/assets/images/userstory2.png)
+![User Story 1](src/assets/images/userstory3.png)
+
+### Animated Icon App Component and Route Structure (React)
+
+![Animated Icon App Component and Route Structure](/src/assets/images/ComponentFlow.png)
 
 ## Technologies used:
 
@@ -22,9 +52,6 @@ This application was created as my capstone project for my time at Epicodus code
 4. $ npm run start
 5. Paste 'http://localhost:8080/' into your web browser to open the application
 
-<!-- ## GH-Pages Link:
-
-  Access this project through the following link: https://jbellwaite.github.io/js-wk2-code-review/ -->
 
 ## Known Bugs:
 

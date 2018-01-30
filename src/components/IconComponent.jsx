@@ -33,7 +33,8 @@ class IconComponent extends React.Component{
 }
 IconComponent.propTypes = {
   image: PropTypes.object,
-  visibleClick:PropTypes.object
+  visibleClick:PropTypes.object,
+  code: PropTypes.string,
 };
 
 

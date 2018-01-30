@@ -27,7 +27,7 @@ function CodeSnippetComponent(){
       <div style = {copyPaste}>
         <h3>Copy & Paste Code</h3>
       </div>
-      <div style = {code}> <p>Once I have a better understanding of React States, this component will display code snippets upon a click function.
+      <div style = {code}> <p>This icon's code will appear here.
       </p>
       </div>
     </div>
