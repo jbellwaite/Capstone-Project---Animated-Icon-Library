@@ -9,6 +9,8 @@
 
 This application was created as my capstone project for my time at Epicodus code school. The app is intended to be a resource for developers who want to implement animated icons into their project, but don't want to spend the time coding and creating the icons themselves. The app enables developers to see how the icon animation works and lets them copy and paste the code they need right from the page's interface. Its my way of helping coders without a design background implement cool and beautiful things into their projects.
 
+***This app is not currently functional - as of 2/2018, its a work in progress***
+
 ## MockUps:
 #### Desktop Website Intro Page
 
