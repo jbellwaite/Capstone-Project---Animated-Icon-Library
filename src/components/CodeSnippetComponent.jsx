@@ -27,7 +27,7 @@ function CodeSnippetComponent(){
       <div style = {copyPaste}>
         <h3>Copy & Paste Code</h3>
       </div>
-      <div style = {code}> <p>This icon's code will appear here.
+      <div style={code}><p>
       </p>
       </div>
     </div>

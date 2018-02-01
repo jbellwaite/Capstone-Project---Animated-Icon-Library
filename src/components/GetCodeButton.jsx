@@ -15,10 +15,6 @@ const arrowDownIcon={
   width: '10%',
 };
 
-const getCode={
-  width: '70%',
-};
-
 class GetCodeButton extends React.Component {
   constructor(props) {
     super(props);
