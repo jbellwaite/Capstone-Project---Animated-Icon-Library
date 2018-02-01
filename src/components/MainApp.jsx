@@ -1,9 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import hamburgerMenu from '../assets/images/hamburgermenu.png';
-import IconComponent from './IconComponent';
-import arrowUp from '../assets/images/arrowup.png';
-import arrowDownIcon from '../assets/images/arrowdown.png';
+
 
 const main = {
   display:'flex'
@@ -17,17 +14,6 @@ const icon = {
   width: '100%',
 };
 
-const masterIconList = [
-  {
-    image:<img src={hamburgerMenu}/>,
-  },
-  {
-    image:<img src={arrowUp}/>,
-  },
-  {
-    image:<img src={arrowDownIcon}/>,
-  },
-];
 
 function MainApp(){
 
