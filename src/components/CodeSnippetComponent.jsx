@@ -27,7 +27,7 @@ function CodeSnippetComponent(){
       <div style = {copyPaste}>
         <h3>Copy & Paste Code</h3>
       </div>
-      <div style={code}><p>
+      <div style={code}>{this.props.code}<p>
       </p>
       </div>
     </div>
