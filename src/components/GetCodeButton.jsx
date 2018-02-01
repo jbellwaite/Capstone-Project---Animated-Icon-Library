@@ -19,12 +19,6 @@ const getCode={
   width: '70%',
 };
 
-// const codeSnippet={
-//   backgroundColor:'yellow',
-//   height: '30px',
-//   width: '30px'
-// };
-
 class GetCodeButton extends React.Component {
   constructor(props) {
     super(props);

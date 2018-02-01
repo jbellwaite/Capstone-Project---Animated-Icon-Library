@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import hamburgerMenu from '../assets/images/hamburgermenu.png';
-import IconComponent from './IconComponent';
+import IconComponent from '../components/icons/IconIndex';
 import arrowUp from '../assets/images/arrowup.png';
 import arrowDownIcon from '../assets/images/arrowdown.png';
+import IconIndex from './icons/IconIndex';
 
 const main = {
   display:'flex'
@@ -19,7 +20,7 @@ const icon = {
 
 const masterIconList = [
   {
-    image:<img src={hamburgerMenu}/>,
+    image:<img src={IconIndex}/>,
   },
   {
     image:<img src={arrowUp}/>,
@@ -30,9 +31,11 @@ const masterIconList = [
 ];
 
 function MainApp(){
+  console.log(IconIndex);
 
   return (
     <div style={main}>
+      <IconIndex></IconIndex>
       <div style={iconBox}>
         <div style={icon}>
           {masterIconList.map((profile, index) =>

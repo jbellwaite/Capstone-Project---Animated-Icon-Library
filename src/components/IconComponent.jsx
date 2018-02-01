@@ -12,6 +12,7 @@ class IconComponent extends React.Component{
   }
 
   getCode(){
+    console.log('Something should display')
     let makeButtonVisible = !this.state.clickButtonVisibleOnPage;
     this.setState({clickButtonVisibleOnPage: makeButtonVisible});
   }
